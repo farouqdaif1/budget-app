@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <%= link_to image_tag("back-icon.png"),"/", class: 'back-btn' %>
+<%- if  devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "LOG IN", new_session_path(resource_name),class:"log-nav" %>  
+  
+<% end %>
+<%- if controller_name != 'sessions'  %>
+  <%= link_to "REGISTER", new_registration_path(resource_name),class:"log-nav" %>
+
+<% end %>
+
+</nav>

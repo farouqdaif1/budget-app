@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
 
   before { subject.save }
 
-  it 'should have name mphatso' do
+  it 'should have name farouq' do
     expect(subject.name).to eql('farouq')
   end
   it 'should have email farouq@mail.com' do

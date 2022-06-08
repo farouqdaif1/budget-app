@@ -1,15 +1,58 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+body{
+    background-color: #b4b4b43b;
+
+}
+.splach{
+    height: 100vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    font-family: 'Joan', serif;
+
+}
+.buttons{
+    margin-top:100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-around;
+    height:20%;
+    width:100%
+}
+.button{
+    width: 80%;
+    background-color: #3778c2;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+}
+.button:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+}
+.signup {
+    background-color:transparent;
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+}
+.signup:hover{
+    text-decoration: none;  
+    color: rgb(44, 44, 44);
+}
+.navbar{
+background-color:#3778c2 ;
+color: rgb(255, 255, 255);
+}
+.log-nav{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.log-nav:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+}
