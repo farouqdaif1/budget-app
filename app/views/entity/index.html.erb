@@ -1,0 +1,12 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'TRANSACTIONS', back_path: group_index_path } %>
+<div>
+<ul class="list-group">
+<% @entities.each do |transaction| %>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+   <%= transaction.name %>
+    <span class="badge badge-primary badge-pill">$<%= transaction.amount %></span>
+  </li>
+<% end %>
+</ul>
+  <%= link_to "Create transcation",new_group_entity_path,class:"create-category" %>  
+</div>

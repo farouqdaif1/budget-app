@@ -1,0 +1,8 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'CREATE TRANSACTION', back_path: group_entity_index_path } %>
+<%= form_with model:@new_entity, url: group_entity_index_path , method: :post do |form|  %>
+  <div class='form-group'>
+    <%= form.text_field :name, class: 'form-control', placeholder: 'Name' %>
+    <%= form.text_field :amount, class: 'form-control', placeholder: 'Amount' %>
+    <%= form.submit "Submit", class: 'btn btn-primary' %>
+  </div>
+<% end %>
