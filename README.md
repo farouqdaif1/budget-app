@@ -68,11 +68,9 @@ rspec
 
 ## Authors
 
-👤 **Hammas Bin Saleem**
-
-- GitHub: [@HAMMAS-SALEEM](https://github.com/HAMMAS-SALEEM)
-- Twitter: [@HammasSaleem4](https://twitter.com/HammasSaleem4)
-- LinkedIn: [HAMMAS SALEEM](https://www.linkedin.com/in/hammas-saleem)
+👤 **Farouq Daif**
+- GitHub: [@farouqdaif1](https://github.com/farouqdaif1)
+- LinkedIn: [@Farouq Daif ](https://www.linkedin.com/in/farouqdaif/)
 
 ## 🤝 Contributing
 
