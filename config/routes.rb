@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   end
 
   resources :group ,only: [:index,:create,:new] do
-    resources :entites ,only: [:index,:create,:new]
+    resources :entity ,only: [:index,:create,:new]
   end 
 end

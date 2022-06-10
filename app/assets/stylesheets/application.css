@@ -64,3 +64,28 @@ body {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
+
+.create-category {
+  position: fixed;
+  text-decoration: none;
+  width: 100%;
+  background-color: #5fb523;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  bottom: 0;
+}
+
+.create-category:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.sign_out_btn {
+  background-color: #3778c2;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}

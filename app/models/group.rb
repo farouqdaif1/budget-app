@@ -1,6 +1,9 @@
 class Group < ApplicationRecord
   belongs_to :user
-  has_and_belongs_to_many :expenses, dependent: :destroy
+  has_many :entities, dependent: :destroy
   validates :name, presence: true
   validates :icon, presence: true
+  def total_mount
+    entities.sum(:amount)
+  end
 end
