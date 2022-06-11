@@ -4,9 +4,10 @@
 <%  @groups.each do |group| %>
 <div>
     <div class="card" style="width: 18rem;">
+     <%= image_tag(group.image, class:"card-img-top") if group.image.attached? %>
     <div class="card-body">
       <h5 class="card-title">  <%=group.name.capitalize%></h5>
-       <h5 class="card-title"> Total amount: <span class="badge badge-primary badge-pill">$<%= group.total_mount %></span></h5>
+       <h5 class="card-title"> Total amount: <span class="badge badge-primary badge-pill">$<%= Entity.all.where(group_id:group.id).sum(:amount) %></span></h5>
       
       <h6 class="card-subtitle mb-2 text-muted"><%=group.created_at%></h6>
       <%= link_to group.name.capitalize, group_entity_index_path(group_id: group.id) ,class:"btn btn-primary" %>

@@ -1,5 +1,8 @@
-<%= render partial: 'shared/navbar', locals: { heading: 'TRANSACTIONS', back_path: group_index_path } %>
+<%= render partial: 'shared/navbar', locals: { heading: 'TRANSACTIONS', back_path: group_index_path(group_id: @category.id ) } %>
 <div>
+<nav class="navbar navbar-dark bg-dark">
+<h5> Total amount:</h5> <span class="badge badge-primary badge-pill">$<%= Entity.all.where(group_id:@category.id).sum(:amount) %> </span>
+</nav>
 <ul class="list-group">
 <% @entities.each do |transaction| %>
   <li class="list-group-item d-flex justify-content-between align-items-center">

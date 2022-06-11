@@ -1,7 +1,7 @@
 class GroupController < ApplicationController
   before_action :authenticate_user!
   def index
-    @groups = current_user.groups.includes(:entities)
+    @groups = current_user.groups
   end
 
   def new
@@ -22,6 +22,6 @@ class GroupController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:name, :icon, :user_id)
+    params.require(:group).permit(:name, :image, :user_id)
   end
 end

@@ -1,7 +1,8 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'CATEGORIES', back_path: group_index_path } %>
 <%=  form_with model: @new_group ,url: group_index_path, method: :post do |form|  %>
   <div class='form-group'>
     <%= form.text_field :name, class: 'form-control', placeholder: 'Category Name' %>
-    <%= form.text_field :icon , class: 'form-control', placeholder: 'Icon' %>
+    Insert icon  <%= form.file_field :image %>
     <%= form.submit "Submit", class: 'btn btn-primary' %>
 </div>
 <% end %>
