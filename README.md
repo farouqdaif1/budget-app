@@ -2,11 +2,6 @@
 
 "MyBudget" is a budget manager web application that allows users to keep track of their budget with different categories.
 
-
-## Link Demo
-
-[Cick here to get live demo]()
-
 ## Video Demo
 https://www.loom.com/share/122853d2b16a442295145af81cd49a0a
 
