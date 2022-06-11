@@ -1,0 +1,12 @@
+<%= render partial: 'shared/navbar', locals: { heading: 'CREATE TRANSACTION', back_path: group_index_path } %>
+<%= form_with model:@new_entity, url: group_entity_index_path , method: :post do |form|  %>
+  <div class='form-group'>
+    <%= form.text_field :name, class: 'form-control', placeholder: 'Name' %>
+    <%= form.text_field :amount, class: 'form-control', placeholder: 'Amount' %>
+     <div class="d-flex flex-column mb-3">
+       <%= form.label :group_id, "Category", class:"form-label" %>
+       <%= form.collection_select :group_id,current_user.groups.order(:name),:id,:name, include_blank: true, class:"form-select" %>
+   </div>
+    <%= form.submit "Submit", class: 'btn btn-primary' %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module SplachHelper
+end
